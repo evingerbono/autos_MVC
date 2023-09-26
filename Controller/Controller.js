@@ -3,12 +3,12 @@ import Urlap from "../View/UrlapView.js";
 class Controller{
 
     constructor(){
-        let MODEL= new Model;
-        new Urlap($(".ujadat"));
+        let MODEL= new Model();
+        let URLAP= new Urlap($(".ujadat"));
 
         $(window).on("hozzaAd", (event) => {
             MODEL.hozzaAd(event.detail);
-            console.log(MODEL.getList);
+            console.log(MODEL.getList());
         })
     }
 }
